@@ -1,0 +1,28 @@
+{
+    "name": "DNV.Navigation",
+    "rootNamespace": "Libraries.DNV.Navigation",
+    "references": [
+        "DNV.Runtime",
+        "AstarPathfindingProject",
+        "PackageTools",
+        "Drawing",
+        "LazySquirrelLabs.MinMaxRangeAttribute"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "DNV_ASTAR"
+    ],
+    "versionDefines": [
+        {
+            "name": "com.arongranberg.astar",
+            "expression": "5.0.0",
+            "define": "DNV_ASTAR"
+        }
+    ],
+    "noEngineReferences": false
+}

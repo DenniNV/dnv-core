@@ -1,0 +1,26 @@
+{
+  "name": "com.dnv.core",
+  "version": "0.3.3",
+  "displayName": "DNV Core",
+  "description": "Project base: DI with scoped contexts, game state flow, execution pipeline, CMS with code generation, Addressables facade, pooling, MVC UI, logging. Optional A* navigation module.",
+  "unity": "6000.4",
+  "author": {
+    "name": "Denis Naumenkov",
+    "url": "https://denninv.github.io"
+  },
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "licensesUrl": "https://github.com/DenniNV/dnv-core/blob/v0.3.3/LICENSE.md",
+  "documentationUrl": "https://github.com/DenniNV/dnv-core/blob/v0.3.3/README.md",
+  "changelogUrl": "https://github.com/DenniNV/dnv-core/blob/v0.3.3/CHANGELOG.md",
+  "keywords": [
+    "dnv",
+    "framework",
+    "di"
+  ],
+  "dependencies": {
+    "com.unity.addressables": "2.9.1",
+    "com.unity.inputsystem": "1.19.0",
+    "com.unity.nuget.newtonsoft-json": "3.2.2",
+    "com.unity.ugui": "2.0.0"
+  }
+}

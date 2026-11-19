@@ -1,0 +1,125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3184928701514833668
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9205044204907095335}
+  - component: {fileID: 2511127412854226611}
+  m_Layer: 0
+  m_Name: ProjectContext
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9205044204907095335
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3184928701514833668}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5131032347490896824}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2511127412854226611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3184928701514833668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16d7737e07d25d14bbfab0ee94f451fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _contextInstaller:
+    rid: 8687199718985695301
+  _contextBuilder:
+    rid: 8687199664139927552
+  references:
+    version: 2
+    RefIds:
+    - rid: 8687199664139927552
+      type: {class: ContextBuilder, ns: Libraries.DNV.DependencyInjection.Context, asm: DNV.Runtime}
+      data:
+        _baseBuilders:
+        - rid: 8687199718985695305
+        - rid: 8687199718985695306
+    - rid: 8687199718985695301
+      type: {class: ContextInstaller, ns: Libraries.DNV.DependencyInjection.Context, asm: DNV.Runtime}
+      data:
+        _resolver:
+          rid: 8687199718985695302
+        _installer:
+        - rid: 8687199718985695303
+    - rid: 8687199718985695302
+      type: {class: Resolver/Project, ns: Libraries.DNV.DependencyInjection, asm: DNV.Runtime}
+      data: 
+    - rid: 8687199718985695303
+      type: {class: ProjectInstaller, ns: Libraries.DNV.DependencyInjection.Installers, asm: DNV.Runtime}
+      data:
+        _cmsDatabase: {fileID: 11400000, guid: 80e07a11b85629543adba91c70135735, type: 2}
+    - rid: 8687199718985695305
+      type: {class: ProjectBuilder, ns: Libraries.DNV.DependencyInjection.Context, asm: DNV.Runtime}
+      data:
+        _executionRoot: {fileID: 5423573806150997623}
+    - rid: 8687199718985695306
+      type: {class: PoolBuilder, ns: Libraries.DNV.CodePresets.Pools.Building, asm: DNV.Runtime}
+      data: 
+--- !u!1 &7677591178004343259
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5131032347490896824}
+  - component: {fileID: 5423573806150997623}
+  m_Layer: 0
+  m_Name: ExecutionRoot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5131032347490896824
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7677591178004343259}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9205044204907095335}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5423573806150997623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7677591178004343259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec1d8926c7f042168abd18a464369aee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

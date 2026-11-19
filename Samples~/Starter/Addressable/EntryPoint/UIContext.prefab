@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3317454493908548132
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7208569960457106559}
+  - component: {fileID: 6218044444448968333}
+  m_Layer: 0
+  m_Name: UIContext
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7208569960457106559
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3317454493908548132}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2182157329624382821}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6218044444448968333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3317454493908548132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24470e1e3d2e2de4fa67c8dd4c8915c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _contextInstaller:
+    rid: 8687199731419447365
+  _contextBuilder:
+    rid: 8687199731419447367
+  references:
+    version: 2
+    RefIds:
+    - rid: 8687199731419447365
+      type: {class: ContextInstaller, ns: Libraries.DNV.DependencyInjection.Context, asm: DNV.Runtime}
+      data:
+        _resolver:
+          rid: 8687199731419447366
+        _installer:
+        - rid: 8687199731419447369
+    - rid: 8687199731419447366
+      type: {class: Resolver/UI, ns: Libraries.DNV.DependencyInjection, asm: DNV.Runtime}
+      data: 
+    - rid: 8687199731419447367
+      type: {class: ContextBuilder, ns: Libraries.DNV.DependencyInjection.Context, asm: DNV.Runtime}
+      data:
+        _baseBuilders:
+        - rid: 8687199731419447368
+    - rid: 8687199731419447368
+      type: {class: UIBuilder, ns: Libraries.DNV.DependencyInjection.Context, asm: DNV.Runtime}
+      data:
+        _uiRoot: {fileID: 3358034090525765296}
+    - rid: 8687199731419447369
+      type: {class: UIInstaller, ns: Libraries.DNV.DependencyInjection.Installers, asm: DNV.Runtime}
+      data:
+        _uiRoot: {fileID: 3358034090525765296}
+--- !u!1 &8051216473083904061
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2182157329624382821}
+  - component: {fileID: 3358034090525765296}
+  m_Layer: 0
+  m_Name: UIRoot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2182157329624382821
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8051216473083904061}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7208569960457106559}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3358034090525765296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8051216473083904061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfe2e6d4c1a14802816c812f105d51df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier:
+  _controllerFactories:
+  - rid: 8687199731419447370
+  references:
+    version: 2
+    RefIds:
+    - rid: 8687199731419447370
+      type: {class: TransitionControllerFactory, ns: Libraries.DNV.MVC.Transition, asm: DNV.Runtime}
+      data:
+        _view:
+          m_AssetGUID: 1ffe10e9106d774458fb5a7dec8e29db
+          m_SubObjectName:
+          m_SubObjectType:
+          m_SubObjectGUID:
+          m_EditorAssetChanged: 0
